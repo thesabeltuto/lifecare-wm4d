@@ -1,0 +1,18 @@
+/*
+ Theme Name:   LifeCare WM4D
+ Theme URI:    http: //www.themeforest.net/
+ Description:  LifeCare Child Theme for WM4D. Integrated with WM4D-Options. Additional Testimonial Categories pages: Text Testimonials and Video Testimonials. Additional Soulmedic-WM4D Shortcodes and Support Page.
+ Author:       AivahThemes, Thesabel Uy Tuto
+ Author URI:   http://www.aivahthemes.com
+ Template:     lifecare
+ Version:      1.1.1
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout
+*/
+
+@import url("../lifecare/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+.youtube { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+.youtube iframe, .youtube object,.youtube embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }

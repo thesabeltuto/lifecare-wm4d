@@ -1,0 +1,109 @@
+/** ADMIN CSS **/
+
+
+/** GENERAL **/
+
+.soulmedic_geo_wm4d_wrap h1 { background: #2ea2cc; padding: 15px; margin: 10px 0; color: #fff; text-shadow: 1px 1px 1px #1D4E61; border-bottom: 8px solid #1E8DBB;}
+
+.soulmedic_geo_wm4d_wrap a, .soulmedic_geo_wm4d_wrap a:visited, .soulmedic_geo_wm4d_wrap a:active { color: #0074a2; }
+.soulmedic_geo_wm4d_wrap a:hover { color: #2ea2cc; }
+.empty { color: #C00505; }
+.filled { color: #2DC569; }
+
+
+/** NAVIGATION **/
+
+.soulmedic_geo_wm4d_wrap #wm4d_nav { display: block; margin: 0; padding: 0;}
+
+.soulmedic_geo_wm4d_wrap #wm4d_nav ul { border-bottom: 3px solid #0074a2; }
+
+.soulmedic_geo_wm4d_wrap #wm4d_nav ul li { display: inline-block; margin: 0 auto; padding: 0; text-align: center; }
+
+.soulmedic_geo_wm4d_wrap #wm4d_nav ul li a, .soulmedic_geo_wm4d_wrap #wm4d_nav ul li a:visited { display: block; padding: 10px 20px; margin: 3px 0 0 0; width: 100px; background: #2ea2cc; border-top: 1px solid #0074a2; border-right: 1px solid #0074a2; border-left: 1px solid #0074a2; color: #fff; text-decoration: none; font-weight:bold; text-shadow: 1px 1px 1px #1D4E61; }
+
+.soulmedic_geo_wm4d_wrap #wm4d_nav ul li.active a, .soulmedic_geo_wm4d_wrap #wm4d_nav ul li.active a:active { color: #fff;  background: #00B3E8; border-top: 1px solid #14A1CA; border-right: 1px solid #14A1CA; border-left: 1px solid #14A1CA; text-shadow: 1px 1px 1px #247294; }
+
+.soulmedic_geo_wm4d_wrap #wm4d_nav ul li a:hover { color: #fff;  background: #0074a2; border-top: 1px solid #2ea2cc; border-right: 1px solid #2ea2cc; border-left: 1px solid #2ea2cc; text-shadow: 1px 1px 1px #818181; }
+
+.soulmedic_geo_wm4d_wrap #wm4d_nav ul li#donate a, .soulmedic_geo_wm4d_wrap #wm4d_nav ul li#donate a:visited { display: block; padding: 10px 20px; margin: 0; width: 90px; background: #FAD92E; border-top: 1px solid #F2CA2E; border-right: 1px solid #F2CA2E; border-left: 1px solid #F2CA2E; color: #383838; text-decoration: none; font-weight: bold; text-shadow: 1px 1px 1px #413521; }
+
+.soulmedic_geo_wm4d_wrap #wm4d_nav ul li#donate a:hover, .soulmedic_geo_wm4d_wrap #wm4d_nav ul li#donate a:active { color: #fff;  background: #DBB20E; border-top: 1px solid #C2A533; border-right: 1px solid #C2A533; border-left: 1px solid #C2A533; text-shadow: 1px 1px 1px #776C20; }
+
+
+/** CONTENT AREA **/
+
+.soulmedic_geo_wm4d_wrap h2 { padding: 15px 0 0 0; margin: 20px 0 0 0; color: #111; text-shadow: 1px 1px 1px #1D4E61; }
+
+.soulmedic_geo_wm4d_wrap h3 { display: block; }
+
+.soulmedic_geo_wm4d_wrap .soulmedic_geo_wm4d_section { display: inline-table; margin: 10px 10px 0 0; }
+
+.soulmedic_geo_wm4d_wrap .soulmedic_geo_wm4d_section.support { display: block; border: 1px solid #0074a2; background: #EFF8FA; padding: 0; margin-right: 20px; }
+
+.soulmedic_geo_wm4d_wrap .soulmedic_geo_wm4d_section.about { display: block; border: 1px solid #0074a2; background: #EFF8FA; padding: 0 20px; margin-right: 20px; }
+
+.soulmedic_geo_wm4d_wrap .soulmedic_geo_wm4d_section.home { display: inline-table; border: 1px dashed #0074a2; background: #EFF8FA; padding: 0 20px 15px 20px;  margin: 10px 10px 0 0; max-width: 500px; }
+
+.soulmedic_geo_wm4d_wrap .soulmedic_geo_wm4d_section.flipper { display: block; border: 1px dashed #0074a2; background: #EFF8FA; padding: 0 20px 15px 20px;  margin: 10px 10px 0 0; }
+
+.soulmedic_geo_wm4d_wrap .soulmedic_geo_wm4d_section.howto { display: inline-table; border: 1px solid #0074a2; background: #EFF8FA; padding: 0 20px 15px 20px;  margin: 10px 10px 0 0; max-width: 500px; }
+
+.soulmedic_geo_wm4d_wrap .soulmedic_geo_wm4d_section.table {  display: inline-table; margin: 10px 20px 0 0; }
+
+/** FOOTER AREA **/
+
+.soulmedic_geo_wm4d_wrap .soulmedic_geo_wm4d_footer { background: #2ea2cc; margin: 20px 0 0 0; padding: 8px 8px 8px 20px; border-top: 8px solid #1E8DBB; color: #fff; text-shadow: 1px 1px 1px #1D4E61; }
+
+.soulmedic_geo_wm4d_wrap .soulmedic_geo_wm4d_footer a { color: #fff; text-shadow: 1px 1px 1px #1D4E61; text-decoration: underline; }
+.soulmedic_geo_wm4d_wrap .soulmedic_geo_wm4d_footer a:hover { color: #000; }
+
+/** THEME SUPPORT TABLE **/
+.soulmedic_geo_wm4d_table_wrap, table.soulmedic_geo_wm4d_table_support { width: 98%; padding: 0; }
+.soulmedic_geo_wm4d_table_wrap { background: #EFF8FA; border: dashed 1px #0074A2; padding: 10px; }
+table.soulmedic_geo_wm4d_table_support { width: 100%; }
+table.soulmedic_geo_wm4d_table_support th, table.soulmedic_geo_wm4d_table_support td { border: 1px solid #A6C7CD; }
+table.soulmedic_geo_wm4d_table_support td:first-child { background: #DEEEF0; }
+.soulmedic_geo_wm4d_table_wrap hr { border: 0; border-top: 1px solid #A6C7CD; border-bottom: 1px solid #E1F4FC; }
+table.soulmedic_geo_wm4d_table_support th { background: #D6F0F5; }
+table.soulmedic_geo_wm4d_table_support input { border: 1px solid #C6E7EF;}
+table.soulmedic_geo_wm4d_table_support input[readonly] { background: #AACAD0; }
+table.soulmedic_geo_wm4d_table_support input.soulmedic_geo_wm4d_add, .soulmedic_geo_wm4d_table_wrap input.soulmedic_geo_wm4d_add  { background: #2DC569; border: 1px solid #17B354;
+	box-shadow: 1px 1px 3px #44AB51; color: #fff;  }
+table.soulmedic_geo_wm4d_table_support input.soulmedic_geo_wm4d_add :hover { background: #12F01E; border: 1px solid #2CEF36;
+	box-shadow: 1px 1px 3px #33C345; cursor: pointer; color: #fff;  }
+table.soulmedic_geo_wm4d_table_support input.soulmedic_geo_wm4d_remove { background: #C52D2D; border: 1px solid #B31717;
+	box-shadow: 1px 1px 3px #AB4444; color: #fff; padding: 3px 6px; font-size:14px; font-weight:bold; }
+table.soulmedic_geo_wm4d_table_support input.soulmedic_geo_wm4d_remove:hover { background: #F01212; border: 1px solid #EF2C2C;
+	box-shadow: 1px 1px 3px #C33333; cursor: pointer; color: #fff; }
+.soulmedic_geo_wm4d_table_wrap_foot_left, .soulmedic_geo_wm4d_table_wrap_foot_right { display:inline-block; }
+.soulmedic_geo_wm4d_table_wrap_foot_left { width: 69%; }
+.soulmedic_geo_wm4d_table_wrap_foot_right { width: 30%; text-align: right; }
+
+/** RESPONSIVE AREA **/
+@media (max-width: 720px) {	
+	.soulmedic_geo_wm4d_wrap #wm4d_nav ul li { width: 100%!important;  }
+	.soulmedic_geo_wm4d_wrap #wm4d_nav ul li a, .soulmedic_geo_wm4d_wrap #wm4d_nav ul li#donate a { width: 100%!important; padding: 10px 0!important; margin: 0 0 0 0!important; }
+	.soulmedic_geo_wm4d_wrap textarea { width: 98%!important; }
+	.soulmedic_geo_wm4d_wrap input { width: 97.7%!important; }
+	input[type="checkbox"] { width: 26px!important; }
+	
+	/** FLIPPER OPTIONS TABLE **/
+	.soulmedic_geo_wm4d_table_wrap { width: 98%!important; font-size: 12px; }
+	table.soulmedic_geo_wm4d_table_support { width: 100%!important; font-size: 12px;}
+	table.soulmedic_geo_wm4d_table_support input, table.soulmedic_geo_wm4d_table_support select { font-size: 12px!important; }
+	.soulmedic_geo_wm4d_table_wrap_foot_left { width: 59%; }
+	.soulmedic_geo_wm4d_table_wrap_foot_right { width: 40%; }
+	.soulmedic_geo_wm4d_table_wrap_foot_right input { font-size: 12px; }
+}
+@media (max-width: 540px) {
+	/** FLIPPER OPTIONS TABLE **/
+	.soulmedic_geo_wm4d_table_wrap { width: 98%!important; font-size: 12px; }
+	table.soulmedic_geo_wm4d_table_support { width: 100%!important; font-size: 12px;}
+	table.soulmedic_geo_wm4d_table_support th, table.soulmedic_geo_wm4d_table_support tr, table.soulmedic_geo_wm4d_table_support td { display: inline-table!important; width: 97%!important; font-size: 14px!important; }
+	table.soulmedic_geo_wm4d_table_support input, table.soulmedic_geo_wm4d_table_support select {
+		display: inline-table!important; width: 100%!important; font-size: 14px!important; 
+	}
+	
+	.soulmedic_geo_wm4d_table_wrap_foot_left, .soulmedic_geo_wm4d_table_wrap_foot_right, .soulmedic_geo_wm4d_table_wrap_foot_right input { width: 100%!important; }
+	.soulmedic_geo_wm4d_table_wrap_foot_right input { font-size: 14px; }
+}
