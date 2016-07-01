@@ -33,12 +33,11 @@
 							<?php the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );?>
 
 							<?php
-							echo '<span class="meta-author"> By ';
-								the_author_posts_link(); 
-							echo ' &#45; </span>';
-							echo '<span class="meta-category">';
-								the_category(',') ; 
-							echo '</span>';
+							if ( the_category() != '' ) :
+								echo '<span class="meta-category">';
+									the_category(',') ; 
+								echo '</span>';
+							endif;
 							?>
 
 							<div class="entry-content">

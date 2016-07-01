@@ -28,14 +28,6 @@
 					
 						<div class="entry-meta">
 						<?php
-							echo '<span class="byline"> By ';
-							the_author_posts_link(); 
-							echo ' &#45; </span>';
-
-							echo '<span class="cat-links">In ';
-							the_category(', ') ; 
-							echo ' &#45; </span>';
-							
 							the_date( '', '<span class="entry-date">', '</span>', true );
 					
 							edit_post_link( __( 'Edit', 'iva_theme_front' ), '<span class="edit-link">', '</span>' ); 

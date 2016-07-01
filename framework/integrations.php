@@ -22,7 +22,7 @@ function integratecodes() {
 <?php }
 
 	function procedures_metabox(){
-		add_meta_box("post-template-meta-container", __('Slider Options','iva_theme_admin'), "procedures_sllider_settings", "procedures", "normal", "high");
+		add_meta_box("post-template-meta-container", __('LifeCare WM4D Slider Options','iva_theme_admin'), "procedures_sllider_settings", "procedures", "normal", "high");
 		add_action('save_post','procedures_meta_save');
 	}
 
@@ -38,18 +38,16 @@ function integratecodes() {
                   <label><?php _e('Show Slider','iva_theme_admin');?> </label>
             </div>
             <div class="column four-sixth last">
-				<?php $switchclass = array_key_exists("show_slider",$lifecare_wm4d_settings) ? 'checkbox-switch-on' :'checkbox-switch-off';
-                      $checked = array_key_exists("show_slider",$lifecare_wm4d_settings) ? ' checked="checked"' : '';?>
-                <div data-for="mytheme-show-slider" class="checkbox-switch <?php echo $switchclass;?>"></div>
-                <input id="mytheme-show-slider" type="checkbox" name="mytheme-show-slider" value="true"  <?php echo $checked;?>/>
-                <p class="note"> <?php _e('YES! to show slider on this page.','iva_theme_admin');?> </p>
+				<?php $checked = array_key_exists("show_slider",$lifecare_wm4d_settings) ? ' checked="checked"' : '';?>
+                <input id="mytheme-show-slider" type="checkbox" name="mytheme-show-slider" value="true" <?php echo $checked;?>/>
+                <p class="note"> <?php _e('CHECK! to show slider on this page.','iva_theme_admin');?> </p>
             </div>
         </div><!-- Show Slider End-->
 
         <!-- slier-container starts-->
     	<div id="slider-conainer">
-        <?php $layerslider = $revolutionslider = 'style="display:none"';
-			  if(isset($lifecare_wm4d_settings['slider_type'])&& $lifecare_wm4d_settings['slider_type'] == "layerslider"):
+        <?php $layerslider = 'style="display:none"';
+			  if( array_key_exists("show_slider",$lifecare_wm4d_settings) == ' checked="checked"' ):
 			  	$layerslider = 'style="display:block"';
 			  endif;?>
           
@@ -145,9 +143,7 @@ function integratecodes() {
 		$settings['disable-tag-info']	= isset($_POST['disable-tag-info']) ? $_POST['disable-tag-info'] : "";
 
 		$settings['show_slider'] =  $_POST['mytheme-show-slider'];
-		$settings['slider_type'] = $_POST['mytheme-slider-type'];
 		$settings['layerslider_id'] = $_POST['layerslider_id'];
-		$settings['revolutionslider_id'] = $_POST['revolutionslider_id'];
 		
 		update_post_meta($post_id, "_lifecare_wm4d_settings", array_filter($settings));
 		
@@ -158,15 +154,13 @@ function procedure_slider_out($post_id) {
 	$lifecare_wm4d_settings = get_post_meta($post_id, '_lifecare_wm4d_settings', TRUE);
 	$lifecare_wm4d_settings = is_array($lifecare_wm4d_settings) ? $lifecare_wm4d_settings : array();
 
-	if (array_key_exists('show_slider', $lifecare_wm4d_settings) && array_key_exists('slider_type', $lifecare_wm4d_settings)) :
+	if (array_key_exists('show_slider', $lifecare_wm4d_settings) == ' checked="checked"' ) :
 
 		echo '<!-- **Slider Section** -->';
 		echo '<section id="slider" class="procedure-slider">';
-		if ($lifecare_wm4d_settings['slider_type'] === "layerslider") :
-			$id = isset( $lifecare_wm4d_settings['layerslider_id'])? $lifecare_wm4d_settings['layerslider_id'] : "";
-			$slider = !empty($id) ? do_shortcode("[layerslider id='{$id}']") : "";
-			echo $slider;
-		endif;
+		$id = isset( $lifecare_wm4d_settings['layerslider_id'])? $lifecare_wm4d_settings['layerslider_id'] : "";
+		$slider = !empty($id) ? do_shortcode("[layerslider id='{$id}']") : "";
+		echo $slider;
 
 		echo '</section><!-- **Slider Section - End** -->';
 	endif;

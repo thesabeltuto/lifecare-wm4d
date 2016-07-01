@@ -157,22 +157,25 @@ if( $headerstyle != 'verticalleftmenu'){
 			procedure_slider_out( $post->ID );
 		}
 		
+		elseif( is_singular('doctors') ) {
+			generate_subhead( 'Meet the Doctor' );
+		}
 		elseif( is_post_type_archive('doctors') ) {
 			generate_subhead( 'Meet the Doctors' );
 		}
-		elseif( is_post_type_archive('team') ) {
+		elseif( is_singular('team') || is_post_type_archive('team') ) {
 			generate_subhead( 'Meet the Team' );
 		}
-		elseif( is_post_type_archive('procedures') ) {
+		elseif( is_singular('procedures') || is_post_type_archive('procedures') ) {
 			generate_subhead( 'Procedures' );
 		}
-		elseif( is_post_type_archive('testimonials') ) {
+		elseif( is_singular('testimonials') || is_post_type_archive('testimonials') ) {
 			generate_subhead( 'Testimonials' );
 		}
-		elseif( is_post_type_archive('office-images') ) {
+		elseif( is_singular('office-images') || is_post_type_archive('office-images') ) {
 			generate_subhead( 'Office Images' );
 		}
-		elseif( is_post_type_archive('before-and-afters') ) {
+		elseif( is_singular('before-and-afters') || is_post_type_archive('before-and-afters') ) {
 			generate_subhead( 'Before and Afters' );
 		}
 		
